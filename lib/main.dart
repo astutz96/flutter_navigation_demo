@@ -21,11 +21,40 @@ class HomePage extends StatelessWidget {
         title: Text('Home Page'),
       ),
       body: Center(
-        child: Text('Home Page Body'),
+        child: ElevatedButton(
+          child: Text('Next'),
+          onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ContentPage1())
+            );
+          },
+        ),
+        //child: Text('Home Page Body'),
       ),
     );
   }
 }
+
+class ContentPage1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Content Page 1'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Previous'),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
+}
+
 
 
 
