@@ -3,19 +3,31 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Text('Flutter Demo Home Page'),
+      title: 'Navigation Demo',
+      home: HomePage(),
     );
   }
 }
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Page'),
+      ),
+      body: Center(
+        child: Text('Home Page Body'),
+      ),
+    );
+  }
+}
+
+
+
 
 
