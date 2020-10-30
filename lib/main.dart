@@ -20,7 +20,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home Page'),
       ),
-      body: Center(
+     ),
+     /* body: Center(
         child: ElevatedButton(
           child: Text('Next'),
           onPressed: (){
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
               MaterialPageRoute(builder: (context) => ContentPage1())
             );
           },
-        ),
+        ),*/
         //child: Text('Home Page Body'),
       ),
     );
